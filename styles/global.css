@@ -1,0 +1,27 @@
+:root {
+    --deep-blue: #010033;
+    --light-blue: #D7D6FF;
+    --background-color: #F4F4F4;
+
+    --color-dark: #212121;
+    --color-medium: #8E8E8E;
+}
+
+body {
+    background-color: var(--background-color);
+    font: 16px/1.5 'Inter', sans-serif;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+/**
+ * Logo
+ */
+
+.logo {
+    display: flex;
+    align-items: center;
+}
