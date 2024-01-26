@@ -1,0 +1,61 @@
+/**
+ * Above the fold
+ */
+
+#fold {
+    margin: 13vh var(--page-inline-margin);
+    display: flex;
+    justify-content: space-between;
+}
+
+#fold .title {
+    max-width: 12ch;
+}
+
+#fold .secondary-title {
+    max-width: 27ch;
+    padding: 2rem 0;
+    color: var(--color-medium);
+}
+
+#fold .secondary-title .bold {
+    color: var(--color-dark);
+}
+
+/**
+ * Projects
+ */
+
+#projects {
+    margin: 0 var(--page-inline-margin);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr));
+    gap: 5rem 3rem;
+}
+
+.project {
+    /* background-color: #dfdfdf; */
+    /* border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1.5rem; */
+    color: var(--color-medium);
+    cursor: pointer;
+}
+
+.project img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    aspect-ratio: 16/9;
+    display: flex;
+}
+
+.project p {
+    max-width: 80%;
+}
+
+.project .bold {
+    font-size: 1.2rem;
+    padding: 11px 0 4px 0;
+    color: var(--color-dark);
+}
