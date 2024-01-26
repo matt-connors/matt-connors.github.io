@@ -2,6 +2,12 @@
  * Above the fold
  */
 
+@media (max-width: 1500px) {
+    #fold {
+        flex-direction: column;
+    }
+}
+
 #fold {
     margin: 13vh var(--page-inline-margin);
     display: flex;
@@ -29,8 +35,8 @@
 #projects {
     margin: 0 var(--page-inline-margin);
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr));
-    gap: 5rem 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 370px), 1fr));
+    gap: clamp(3.5rem, 5vh, 5rem) min(3vw, 2.5rem);
 }
 
 .project {
