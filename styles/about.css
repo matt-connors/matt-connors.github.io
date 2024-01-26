@@ -1,0 +1,12 @@
+article {
+    margin: 13vh auto;
+    width: fit-content;
+}
+
+article .secondary-title {
+    padding: 1rem 0;
+}
+
+article p {
+    max-width: 800px;
+}
