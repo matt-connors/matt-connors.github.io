@@ -9,4 +9,11 @@ article .secondary-title {
 
 article p {
     max-width: 800px;
+    padding-bottom: 1rem;
+}
+
+@media (max-width: 1200px) {
+    article {
+        margin: 13vh var(--page-inline-margin);
+    }
 }
