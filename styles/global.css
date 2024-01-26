@@ -5,16 +5,60 @@
 
     --color-dark: #212121;
     --color-medium: #8E8E8E;
+
+    --page-inline-margin: 15vw;
 }
 
 body {
     background-color: var(--background-color);
-    font: 16px/1.5 'Inter', sans-serif;
+    font: 400 16px/1.5 'Inter', sans-serif;
     margin: 0;
+    box-sizing: border-box;
 }
 
 ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+figure {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/**
+ * Common Classes
+ */
+
+.button-primary {
+    background-color: var(--light-blue);
+    color: var(--color-dark);
+    padding: 10px 30px;
+    border-radius: 12px;
+    font-weight: 500;
+}
+
+/**
+ * Header
+ */
+
+header {
+    background-color: var(--deep-blue);
+    color: #fff;
+    padding: 15px var(--page-inline-margin);
+    display: flex;
+    justify-content: space-between;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
 }
 
 /**
@@ -24,4 +68,15 @@ ul {
 .logo {
     display: flex;
     align-items: center;
+    gap: 13px;
+}
+
+.logo img {
+    width: 43px;
+    height: 43px;
+    object-fit: cover;
+}
+
+.logo figcaption {
+    font-size: 1.15rem;
 }
