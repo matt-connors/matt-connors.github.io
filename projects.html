@@ -12,7 +12,7 @@
 
         <!-- CSS -->
         <link rel="stylesheet" type="text/css" href="styles/global.css" />
-        <link rel="stylesheet" type="text/css" href="styles/index.css" />
+        <link rel="stylesheet" type="text/css" href="styles/projects.css" />
 
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,11 +42,7 @@
             </ul>
         </header>
         <section id="fold">
-            <h1 class="title">I'm Matthew Connors.</h1>
-            <div>
-                <h2 class="secondary-title"><span class="bold">A senior at Bridgewater State University</span>, I specialize in computer networking, cloud architecture, and web development.</h2>
-                <a href="" target="_blank" class="button-primary">View LinkedIn</a>
-            </div>
+            <h1 class="title">Projects</h1>
         </section>
         <section id="projects">
             <div class="project">
@@ -74,6 +70,37 @@
                 <p class="bold">Project Name</p>
                 <p>A brief description of the project and what it's about</p>
             </div>
+        </section>
+        <section id="project-desc">
+            <h2 class="title">Final Group<br />Project Concept</h2>
+            <br />
+            <h3 class="secondary-title">Description</h3>
+            <p>An feasable final project idea is a citation generator, much like <a href="https://www.citationmachine.net/" rel="nofollow norefferer" target="_blank">Citation Machine</a> by Chegg. Provided a link, in addition to other necessary information, the app will produce citations in the specified format (MLA, APA, etc).</p>
+            <!-- <br /> -->
+            <h3 class="secondary-title">Front-end Implementation</h3>
+            <p>The initial design mockup with be made in Figma. Using this design, we will construct the necessary interfaces for our app using React and Astro. For interactive interfaces, we will create React components. Furthermore, Astro will be used to fuse the entire app together, as well as for any content-centric components.</p>
+            <ul>
+                <li>Figma for initial design</li>
+                <li>Astro, written in HTML, CSS, and Javascript, for static components</li>
+                <li>React for interactive components</li>
+            </ul>
+            <br>
+            <h3 class="secondary-title">Back-end Implementation</h3>
+            <p>Using Terraform, the appropriate cloud infrastructure will be deployed on Cloudflare, which will host our app. The reason we chose Cloudflare was due to its predictable, low-cost pricing model which doesn't charge for bandwidth.</p>
+            <ul>
+                <li>Terraform for managing cloud infrastructure</li>
+                <li>Cloudflare as our primary cloud service provider</li>
+                <ul>
+                    <li>Cloudflare CDN and DDoS protection</li>
+                    <li>Cloudflare Workers</li>
+                    <!-- <li>Cloudflare R2</li> -->
+                    <li>Cloudflare Pages</li>
+                </ul>
+                <!-- <li>Puppeteer for rendering websites and scraping necessary information, such as author, published date, etc.</li> -->
+                <li>A Cloudflare Worker to scrape necessary information from webpages, such as author, published date, etc.</li>
+                <li>Potentially, Imgix for serving images</li>
+                <li>Astro (similar to next.js) for page layout, and static components.</li>
+            </ul>
         </section>
         <footer>
             <p>&copy; 2024 Matthew Connors</p>

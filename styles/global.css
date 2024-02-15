@@ -23,9 +23,12 @@ body {
     color: var(--color-dark);
 }
 
-ul {
+header ul {
     list-style: none;
     padding: 0;
+}
+
+ul {
     margin: 0;
 }
 
