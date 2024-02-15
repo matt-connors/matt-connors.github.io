@@ -1,0 +1,67 @@
+/**
+ * Media Query used in global.css
+ */
+
+/**
+ * Fold
+ */
+
+#fold {
+    margin: 15vh var(--page-inline-margin);
+}
+
+/**
+ * Projects
+ */
+
+#projects {
+    margin: 0 var(--page-inline-margin);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 370px), 1fr));
+    gap: clamp(3.5rem, 5vh, 5rem) min(3vw, 2.5rem);
+}
+
+.project {
+    color: var(--color-medium);
+    cursor: pointer;
+}
+
+.project img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    aspect-ratio: 16/9;
+    display: flex;
+}
+
+.project p {
+    max-width: 80%;
+}
+
+.project .bold {
+    font-size: 1.2rem;
+    padding: 11px 0 4px 0;
+    color: var(--color-dark);
+}
+
+/**
+ * Project Description
+ */
+
+#project-desc {
+    margin: 15vh var(--page-inline-margin) 10vh;
+}
+
+#project-desc a {
+    text-decoration: underline;
+}
+
+#project-desc p {
+    max-width: 800px;
+    padding-bottom: 1rem;
+}
+
+#project-desc .secondary-title {
+    padding: 1rem 0;
+    color: var(--color-medium);
+}
